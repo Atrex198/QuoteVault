@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quote Detail Export V2</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#0df2f2", "background-light": "#f5f8f8", "background-dark": "#102222", "surface-dark": "#1A222C", "surface-border": "#2C3440"}, fontFamily: {display: "Inter", body: ["Noto Sans", "sans-serif"]}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}}}};</script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased selection:bg-primary/30">
+<div class="relative flex h-full min-h-screen w-full max-w-md mx-auto flex-col overflow-hidden bg-background-light dark:bg-background-dark shadow-2xl border-x border-surface-border">
+<!-- Header -->
+<header class="flex items-center justify-between px-4 py-4 pt-6 bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<button class="flex items-center justify-center w-10 h-10 rounded-full text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h2 class="text-lg font-bold tracking-tight text-center">Customize</h2>
+<button class="flex items-center justify-center w-10 h-10 rounded-full text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[24px]">bookmark</span>
+</button>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="flex-1 overflow-y-auto px-4 pb-32 no-scrollbar">
+<!-- Canvas Area -->
+<div class="mt-4 mb-8 flex justify-center">
+<!-- Square Canvas Container -->
+<div class="relative w-full aspect-square max-w-[340px] rounded-xl overflow-hidden shadow-2xl bg-center bg-cover border border-surface-border group" data-alt="Deep abstract blue and black geometric background texture" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjwo00sA7brPZeqG_iLytwTOkgkDzUZRWAAlp9GOrxRet_6dgPBX1zgPneiw__eTocrZXGB55KrhGHkBfEOl-8quLKWxwnAvGYLJa67Mh-JYNHrreWhylYeVxsZ33Xmdw9xu3IdpyAe4MBKHjxJRhGAPId2FRrib1h-Miec3T7nsVCt2-XX7pRN_3YRpIwJF8iph3eFJYDTeXOvGhGot7rTreQ96xuu9INopqbiF5-QAk3dHnM9Vs_qo_6QW59o36IGfPRr1wOsMs');">
+<!-- Canvas Controls Overlay (Top Right) -->
+<div class="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="bg-black/40 backdrop-blur-md p-1.5 rounded-lg hover:bg-primary/60 transition-colors">
+<span class="material-symbols-outlined text-white text-[18px]">format_size</span>
+</button>
+<button class="bg-black/40 backdrop-blur-md p-1.5 rounded-lg hover:bg-primary/60 transition-colors">
+<span class="material-symbols-outlined text-white text-[18px]">format_align_center</span>
+</button>
+</div>
+<!-- Quote Text -->
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+<p class="text-white text-2xl md:text-3xl font-bold leading-tight tracking-tight mb-6 drop-shadow-lg">
+                            "The only way to do great work is to love what you do"
+                        </p>
+<p class="text-white/80 text-sm font-medium tracking-wide uppercase">
+                            — Steve Jobs
+                        </p>
+</div>
+<!-- Watermark -->
+<div class="absolute bottom-3 left-0 right-0 text-center">
+<p class="text-white/30 text-[10px] tracking-widest uppercase">QuoteVault</p>
+</div>
+</div>
+</div>
+<!-- Style Selector Section -->
+<div class="mb-6">
+<div class="flex items-center justify-between mb-3 px-1">
+<h3 class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Style</h3>
+<button class="text-primary text-xs font-bold hover:underline">See All</button>
+</div>
+<!-- Carousel -->
+<div class="flex gap-3 overflow-x-auto pb-4 -mx-4 px-4 scroll-smooth hide-scrollbar">
+<!-- Item 1: Minimal (Active) -->
+<button class="relative group flex-shrink-0 w-28 h-36 rounded-xl overflow-hidden border-2 border-primary ring-2 ring-primary/20 transition-all">
+<div class="absolute inset-0 bg-surface-dark flex flex-col items-center justify-center p-3">
+<div class="w-full h-full flex flex-col justify-center items-center gap-2">
+<span class="block w-8 h-1 bg-white/20 rounded-full mb-1"></span>
+<span class="block w-12 h-1 bg-white/20 rounded-full mb-1"></span>
+<span class="block w-6 h-1 bg-white/20 rounded-full"></span>
+</div>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-3 pt-6">
+<span class="text-white font-bold text-sm">Minimal</span>
+</div>
+<div class="absolute top-2 right-2 bg-primary rounded-full p-0.5">
+<span class="material-symbols-outlined text-white text-[14px] block">check</span>
+</div>
+</button>
+<!-- Item 2: Bold -->
+<button class="relative group flex-shrink-0 w-28 h-36 rounded-xl overflow-hidden border border-transparent hover:border-surface-border transition-all">
+<div class="absolute inset-0 bg-white flex flex-col items-center justify-center p-3">
+<p class="text-black font-black text-3xl leading-none opacity-20 rotate-12 scale-150 select-none">Aa</p>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 pt-6">
+<span class="text-white font-bold text-sm">Bold</span>
+</div>
+</button>
+<!-- Item 3: Paper -->
+<button class="relative group flex-shrink-0 w-28 h-36 rounded-xl overflow-hidden border border-transparent hover:border-surface-border transition-all">
+<div class="absolute inset-0 bg-[#e8e4d9] flex flex-col items-center justify-center p-3 bg-cover" data-alt="Subtle paper texture background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgs-YNl25R5m1w9dEMQB8d7rE9BqcszXUPJwgdZpTun1oX_fEwfyOsxMkqCvQyjN6tmhU7wa_iSOppcaQN1NZ27Uydi-RZL2hpeGDMCVle07bO9lc0MEXjBiwONEBLUwKLjDdB-87aGwEI8tymiaXoyF1i7lMetIB6aYvQ-Nl_TEVocnvaV7qApzDTEUHZWaom-wy-AWxMjCvtylZ5MS77mPk6MBUnewGEghSZInlJsv-DsnA1aKyciPQjGlnwq7JeSt-D-09X-Zc');">
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 pt-6">
+<span class="text-white font-bold text-sm">Paper</span>
+</div>
+</button>
+<!-- Item 4: Neon -->
+<button class="relative group flex-shrink-0 w-28 h-36 rounded-xl overflow-hidden border border-transparent hover:border-surface-border transition-all">
+<div class="absolute inset-0 bg-black flex flex-col items-center justify-center p-3">
+<div class="w-16 h-16 rounded-full border-2 border-fuchsia-500 blur-md opacity-60"></div>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 pt-6">
+<span class="text-white font-bold text-sm">Neon</span>
+</div>
+</button>
+<!-- Item 5: Gradient -->
+<button class="relative group flex-shrink-0 w-28 h-36 rounded-xl overflow-hidden border border-transparent hover:border-surface-border transition-all">
+<div class="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex flex-col items-center justify-center p-3">
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 pt-6">
+<span class="text-white font-bold text-sm">Gradient</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Typography Controls (Simplified Slider) -->
+<div class="bg-surface-dark rounded-xl p-4 mb-6 border border-surface-border">
+<div class="flex items-center justify-between mb-3">
+<span class="text-xs font-medium text-slate-400 uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">text_fields</span> Size
+                    </span>
+<span class="text-xs font-bold text-white">24px</span>
+</div>
+<div class="relative w-full h-8 flex items-center">
+<div class="w-full h-1 bg-surface-border rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[45%] rounded-full"></div>
+</div>
+<div class="absolute left-[45%] w-6 h-6 bg-white rounded-full shadow-lg border-2 border-primary cursor-grab active:cursor-grabbing hover:scale-110 transition-transform"></div>
+</div>
+</div>
+</main>
+<!-- Fixed Bottom Action Bar -->
+<div class="absolute bottom-0 left-0 right-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-xl border-t border-slate-200 dark:border-surface-border p-4 pb-8 z-20">
+<div class="flex gap-3 max-w-md mx-auto">
+<button class="flex-1 h-14 flex items-center justify-center gap-2 rounded-xl border-2 border-slate-300 dark:border-surface-border bg-transparent text-slate-700 dark:text-white font-bold text-base hover:bg-slate-100 dark:hover:bg-surface-dark transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+                    Copy Text
+                </button>
+<button class="flex-[2] h-14 flex items-center justify-center gap-2 rounded-xl bg-primary text-white font-bold text-base shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all active:scale-[0.98]">
+                    Share Image
+                    <span class="material-symbols-outlined text-[20px]">ios_share</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
